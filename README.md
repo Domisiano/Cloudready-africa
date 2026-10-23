@@ -1,34 +1,37 @@
 # CloudReady Africa
 
-CloudReady Africa is an AZ-900 (Microsoft Azure Fundamentals) exam-preparation learning site built for learners preparing for cloud fundamentals certification.
+An AZ-900 (Microsoft Azure Fundamentals) exam-preparation learning site.
 
-## Current live deployment
+## Live website
+- Wix deployment: https://headless-jofjgsjpbcv-okongodomisia1-140e.wix-site-host.com/
+- GitHub repository: https://github.com/Domisiano/Cloudready-africa
 
-- Website: https://headless-jofjgsjpbcv-okongdomisia1-140e.wix-site-host.com/
-- Hosting/management: Wix Headless
-- Repository: https://github.com/Domisiano/Cloudready-africa
+## Features
+- Smart Quiz Coach with original practice questions and explanations
+- Study Buddy with curated explainers and practical examples
+- Flashcards and topic-based review
+- Personal Study Planner
+- Readiness Tracker, topic mastery, attempt history and missed-answer review
+- Browser-local progress persistence using localStorage
+- Responsive desktop and mobile layout
 
-## Planned/known learning features
+Practice questions are original study material, not official Microsoft exam questions. Study Buddy is curated content, not a connected live AI model.
 
-The existing Wix deployment includes a single-page learning experience with:
-- Smart Quiz Coach with original practice questions and answer explanations
-- Study Buddy with curated explainers
-- Flashcards
-- Study Planner
-- Readiness Tracker
-- Local browser storage for progress and quiz attempt history
+## Repository contents
+- `index.html` — complete single-page application (HTML, CSS and JavaScript) recovered from the current Wix deployment
+- `_wix/pages.json` — Wix static route configuration recovered from the deployment
+- `README.md` — project documentation
 
-Practice questions are original study material and are not represented as official Microsoft exam questions.
+The Wix deployment inventory reported two site files. Both were transferred to this repository and read back from GitHub after commit. The live Wix deployment was not modified by the transfer.
 
-## Source and deployment notes
+## Run locally
+Open `index.html` in a browser or serve the repository root with a static web server. Progress is stored in the current browser and is not synced between devices.
 
-This repository was initially empty. This README is the first committed file; the deployed website's full source has not yet been copied into this repository. Do not treat this repository as a complete reproducible build until index.html, _wix/pages.json, and any required assets/configuration have been added and checked against the live Wix deployment.
+## Deployment notes
+The source includes the Wix Headless site-script loader. The current production site remains hosted on Wix. Before deploying to another host, test there first and determine whether that Wix-specific script is required; do not remove it without verification.
 
-The live Wix site should remain unchanged while the source is recovered and versioned here.
-
-## Next steps
-
-1. Recover the exact current source from the Wix Headless site.
-2. Add index.html, _wix/pages.json, and any other required files.
-3. Verify all interactive modules and mobile layout.
-4. Add deployment instructions and test a separate preview before changing production hosting.
+## Verification
+- Confirmed the Wix deployment contains `index.html` and `_wix/pages.json`.
+- Committed both source files to `main` and read them back from GitHub.
+- Left the live Wix site unchanged.
+- Browser testing on a separate host has not yet been performed.
